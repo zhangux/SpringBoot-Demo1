@@ -10,6 +10,8 @@
 package com.zxu;
 
 import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -28,7 +30,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableCaching
 public class Application extends SpringBootServletInitializer {
-
+	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
         System.out.println(" ______                    _   ______            \n" +
@@ -41,6 +43,7 @@ public class Application extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+    	LOG.info("我是MyEclipse");
         return builder.sources(Application.class);
     }
 }
