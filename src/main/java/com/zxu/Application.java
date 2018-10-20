@@ -30,7 +30,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableCaching
 public class Application extends SpringBootServletInitializer {
-	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
+
+    private final Logger LOG = LoggerFactory.getLogger(this.getClass());
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
         System.out.println(" ______                    _   ______            \n" +
@@ -43,7 +45,8 @@ public class Application extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-    	LOG.info("我是MyEclipse");
+        LOG.info("我是MyEclipse");
+        LOG.info("我说IDEA");
         return builder.sources(Application.class);
     }
 }
