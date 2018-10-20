@@ -1,0 +1,376 @@
+2018-10-20 12:29:16.538[main:561]-[INFO] Starting Application on MSI with PID 5308 (E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1\target\classes started by zhangxu in E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1)
+2018-10-20 12:29:16.539[main:562]-[INFO] The following profiles are active: dev
+2018-10-20 12:29:16.760[main:783]-[INFO] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17f9d882: startup date [Sat Oct 20 12:29:16 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 12:29:18.146[main:2169]-[INFO] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-20 12:29:19.272[main:3295]-[INFO] HV000001: Hibernate Validator 5.3.6.Final
+2018-10-20 12:29:20.192[main:4215]-[INFO] Tomcat initialized with port(s): 8888 (http)
+2018-10-20 12:29:20.218[main:4241]-[INFO] Starting service [Tomcat]
+2018-10-20 12:29:20.220[main:4243]-[INFO] Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-10-20 12:29:20.502[localhost-startStop-1:4525]-[INFO] Initializing Spring embedded WebApplicationContext
+2018-10-20 12:29:20.502[localhost-startStop-1:4525]-[INFO] Root WebApplicationContext: initialization completed in 3742 ms
+2018-10-20 12:29:20.715[localhost-startStop-1:4738]-[INFO] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-20 12:29:20.715[localhost-startStop-1:4738]-[INFO] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-20 12:29:20.715[localhost-startStop-1:4738]-[INFO] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-20 12:29:20.715[localhost-startStop-1:4738]-[INFO] Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-20 12:29:20.715[localhost-startStop-1:4738]-[INFO] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-20 12:29:20.716[localhost-startStop-1:4739]-[INFO] Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-20 12:29:21.431[main:5454]-[INFO] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17f9d882: startup date [Sat Oct 20 12:29:16 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 12:29:21.498[main:5521]-[INFO] Mapped "{[/goods/query/{id}]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.get(java.lang.Long)
+2018-10-20 12:29:21.499[main:5522]-[INFO] Mapped "{[/goods/save]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.save(com.zxu.entity.Goods)
+2018-10-20 12:29:21.499[main:5522]-[INFO] Mapped "{[/goods/query]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.query(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-20 12:29:21.499[main:5522]-[INFO] Mapped "{[/goods]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.query2(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-20 12:29:21.500[main:5523]-[INFO] Mapped "{[/error/400]}" onto public com.zxu.util.common.Result com.zxu.controller.sys.ErrorController.error_400(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:29:21.500[main:5523]-[INFO] Mapped "{[/error/500]}" onto public com.zxu.util.common.Result com.zxu.controller.sys.ErrorController.error_500(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:29:21.500[main:5523]-[INFO] Mapped "{[/error/404]}" onto public com.zxu.util.common.Result com.zxu.controller.sys.ErrorController.error_404(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:29:21.502[main:5525]-[INFO] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:29:21.502[main:5525]-[INFO] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-20 12:29:21.542[main:5565]-[INFO] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 12:29:21.542[main:5565]-[INFO] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 12:29:21.583[main:5606]-[INFO] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 12:29:21.619[main:5642]-[WARN] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-10-20 12:29:22.491[main:6514]-[INFO] 
+
+Using default security password: a9b60acf-2a4c-4962-8f77-c2f13be3243c
+
+2018-10-20 12:29:22.536[main:6559]-[INFO] Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-10-20 12:29:22.602[main:6625]-[INFO] Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@59636c47, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c18d6d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@6097fca9, org.springframework.security.web.header.HeaderWriterFilter@3ca14cf4, org.springframework.security.web.csrf.CsrfFilter@34d480b9, org.springframework.security.web.authentication.logout.LogoutFilter@6467ddc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5729b410, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a8f6e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cbb175, org.springframework.security.web.session.SessionManagementFilter@7aaad0, org.springframework.security.web.access.ExceptionTranslationFilter@2443135]
+2018-10-20 12:29:22.802[main:6825]-[INFO] Registering beans for JMX exposure on startup
+2018-10-20 12:29:22.803[main:6826]-[INFO] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-20 12:29:22.808[main:6831]-[INFO] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-20 12:29:22.828[main:6851]-[INFO] Initializing ProtocolHandler ["http-nio-8888"]
+2018-10-20 12:29:22.847[main:6870]-[INFO] Starting ProtocolHandler ["http-nio-8888"]
+2018-10-20 12:29:22.856[main:6879]-[INFO] Using a shared selector for servlet write/read
+2018-10-20 12:29:22.872[main:6895]-[INFO] Tomcat started on port(s): 8888 (http)
+2018-10-20 12:29:22.876[main:6899]-[INFO] Started Application in 6.782 seconds (JVM running for 7.246)
+2018-10-20 12:29:29.501[http-nio-8888-exec-1:13524]-[INFO] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-20 12:29:29.502[http-nio-8888-exec-1:13525]-[INFO] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-20 12:29:29.538[http-nio-8888-exec-1:13561]-[INFO] FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-10-20 12:29:29.642[http-nio-8888-exec-1:13665]-[INFO] {dataSource-1} inited
+2018-10-20 12:30:20.551[http-nio-8888-exec-3:64574]-[INFO] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-20 12:30:20.599[http-nio-8888-exec-3:64622]-[INFO] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-10-20 12:30:20.607[http-nio-8888-exec-3:64630]-[ERROR] 访问/my/goods/query/ 发生错误, 错误信息:
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+### The error may exist in file [E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM goods   ORDER BY uptime DESC1        LIMIT ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+2018-10-20 12:30:20.682[http-nio-8888-exec-3:64705]-[ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [/my] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+### The error may exist in file [E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM goods   ORDER BY uptime DESC1        LIMIT ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy82.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy72.query(Unknown Source)
+	at com.zxu.service.impl.GoodsServiceImpl.query(GoodsServiceImpl.java:48)
+	at com.zxu.controller.GoodsController.query(GoodsController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:744)
+2018-10-20 12:30:25.842[http-nio-8888-exec-7:69865]-[ERROR] 访问/my/goods/query/ 发生错误, 错误信息:
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+### The error may exist in file [E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM goods   ORDER BY uptime DESC1        LIMIT ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+2018-10-20 12:30:25.844[http-nio-8888-exec-7:69867]-[ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [/my] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+### The error may exist in file [E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM goods   ORDER BY uptime DESC1        LIMIT ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC1
+		 
+			LIMIT 0,10' at line 2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy82.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy71.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy72.query(Unknown Source)
+	at com.zxu.service.impl.GoodsServiceImpl.query(GoodsServiceImpl.java:48)
+	at com.zxu.controller.GoodsController.query(GoodsController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:744)
+2018-10-20 12:30:53.277[RMI TCP Connection(2)-192.168.1.63:97300]-[INFO] Application shutdown requested.
+2018-10-20 12:30:53.277[RMI TCP Connection(2)-192.168.1.63:97300]-[INFO] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17f9d882: startup date [Sat Oct 20 12:29:16 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 12:30:53.476[RMI TCP Connection(2)-192.168.1.63:97499]-[INFO] Unregistering JMX-exposed beans on shutdown
+2018-10-20 12:30:53.476[RMI TCP Connection(2)-192.168.1.63:97499]-[INFO] Unregistering JMX-exposed beans
+2018-10-20 12:30:53.480[RMI TCP Connection(2)-192.168.1.63:97503]-[INFO] {dataSource-1} closed
+2018-10-20 12:30:59.648[main:556]-[INFO] Starting Application on MSI with PID 9456 (E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1\target\classes started by zhangxu in E:\Java\MyEclipseProject\OneWork\SpringBoot-Demo1)
+2018-10-20 12:30:59.648[main:556]-[INFO] The following profiles are active: dev
+2018-10-20 12:30:59.864[main:772]-[INFO] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a83a74a: startup date [Sat Oct 20 12:30:59 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 12:31:01.049[main:1957]-[INFO] Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-20 12:31:02.387[main:3295]-[INFO] HV000001: Hibernate Validator 5.3.6.Final
+2018-10-20 12:31:03.314[main:4222]-[INFO] Tomcat initialized with port(s): 8888 (http)
+2018-10-20 12:31:03.338[main:4246]-[INFO] Starting service [Tomcat]
+2018-10-20 12:31:03.339[main:4247]-[INFO] Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-10-20 12:31:03.619[localhost-startStop-1:4527]-[INFO] Initializing Spring embedded WebApplicationContext
+2018-10-20 12:31:03.619[localhost-startStop-1:4527]-[INFO] Root WebApplicationContext: initialization completed in 3756 ms
+2018-10-20 12:31:03.844[localhost-startStop-1:4752]-[INFO] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-20 12:31:03.844[localhost-startStop-1:4752]-[INFO] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-20 12:31:03.844[localhost-startStop-1:4752]-[INFO] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-20 12:31:03.844[localhost-startStop-1:4752]-[INFO] Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-20 12:31:03.845[localhost-startStop-1:4753]-[INFO] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-20 12:31:03.845[localhost-startStop-1:4753]-[INFO] Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-20 12:31:04.588[main:5496]-[INFO] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a83a74a: startup date [Sat Oct 20 12:30:59 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 12:31:04.657[main:5565]-[INFO] Mapped "{[/goods/query/{id}]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.get(java.lang.Long)
+2018-10-20 12:31:04.657[main:5565]-[INFO] Mapped "{[/goods/save]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.save(com.zxu.entity.Goods)
+2018-10-20 12:31:04.658[main:5566]-[INFO] Mapped "{[/goods/query]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.query(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-20 12:31:04.658[main:5566]-[INFO] Mapped "{[/goods]}" onto public com.zxu.util.common.Result com.zxu.controller.GoodsController.query2(java.util.Map<java.lang.String, java.lang.Object>)
+2018-10-20 12:31:04.659[main:5567]-[INFO] Mapped "{[/error/404]}" onto public com.zxu.util.common.Result com.zxu.controller.sys.ErrorController.error_404(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:31:04.659[main:5567]-[INFO] Mapped "{[/error/400]}" onto public com.zxu.util.common.Result com.zxu.controller.sys.ErrorController.error_400(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:31:04.659[main:5567]-[INFO] Mapped "{[/error/500]}" onto public com.zxu.util.common.Result com.zxu.controller.sys.ErrorController.error_500(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:31:04.661[main:5569]-[INFO] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-20 12:31:04.662[main:5570]-[INFO] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-20 12:31:04.697[main:5605]-[INFO] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 12:31:04.697[main:5605]-[INFO] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 12:31:04.741[main:5649]-[INFO] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 12:31:04.781[main:5689]-[WARN] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-10-20 12:31:05.603[main:6511]-[INFO] 
+
+Using default security password: 63eb7aba-e800-4e4e-bb83-684afe0f5f17
+
+2018-10-20 12:31:05.650[main:6558]-[INFO] Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-10-20 12:31:05.711[main:6619]-[INFO] Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@77b5148c, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36359723, org.springframework.security.web.context.SecurityContextPersistenceFilter@608cd501, org.springframework.security.web.header.HeaderWriterFilter@3c9ef6e9, org.springframework.security.web.csrf.CsrfFilter@46c10083, org.springframework.security.web.authentication.logout.LogoutFilter@20d19f2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59096b66, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@487cd177, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ab14636, org.springframework.security.web.session.SessionManagementFilter@6cbb175, org.springframework.security.web.access.ExceptionTranslationFilter@668cc9a2]
+2018-10-20 12:31:05.890[main:6798]-[INFO] Registering beans for JMX exposure on startup
+2018-10-20 12:31:05.891[main:6799]-[INFO] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-20 12:31:05.894[main:6802]-[INFO] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-20 12:31:05.915[main:6823]-[INFO] Initializing ProtocolHandler ["http-nio-8888"]
+2018-10-20 12:31:05.937[main:6845]-[INFO] Starting ProtocolHandler ["http-nio-8888"]
+2018-10-20 12:31:05.947[main:6855]-[INFO] Using a shared selector for servlet write/read
+2018-10-20 12:31:05.964[main:6872]-[INFO] Tomcat started on port(s): 8888 (http)
+2018-10-20 12:31:05.968[main:6876]-[INFO] Started Application in 6.758 seconds (JVM running for 7.217)
+2018-10-20 12:31:12.961[http-nio-8888-exec-1:13869]-[INFO] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-20 12:31:12.961[http-nio-8888-exec-1:13869]-[INFO] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-20 12:31:13.004[http-nio-8888-exec-1:13912]-[INFO] FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2018-10-20 12:31:13.109[http-nio-8888-exec-1:14017]-[INFO] {dataSource-1} inited
+2018-10-20 12:41:24.075[RMI TCP Connection(2)-192.168.1.63:624983]-[INFO] Application shutdown requested.
+2018-10-20 12:41:24.075[RMI TCP Connection(2)-192.168.1.63:624983]-[INFO] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a83a74a: startup date [Sat Oct 20 12:30:59 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 12:41:24.255[RMI TCP Connection(2)-192.168.1.63:625163]-[INFO] Unregistering JMX-exposed beans on shutdown
+2018-10-20 12:41:24.256[RMI TCP Connection(2)-192.168.1.63:625164]-[INFO] Unregistering JMX-exposed beans
+2018-10-20 12:41:24.258[RMI TCP Connection(2)-192.168.1.63:625166]-[INFO] {dataSource-1} closed
